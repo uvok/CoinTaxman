@@ -583,7 +583,7 @@ class Book:
                     fee_currency == "BEST"
                     or (operation == "SELL" and fee_currency == price_currency)
                     or (operation == "BUY" and fee_currency == amount_currency)
-                )
+                ), "Invalid fee currency"
 
                 utc_time = misc.parse_iso_timestamp(_utc_time)
 
